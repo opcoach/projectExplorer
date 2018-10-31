@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:basic_1="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_gWHSUNxWEeialuictYB3Og">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_heEY4NxWEeialuictYB3Og" featurename="snippets" parentElementId="xpath:/">
+    <elements xsi:type="advanced:Perspective" xmi:id="_j8p7MNxWEeialuictYB3Og" elementId="com.opcoach.navigator.perspective" label="OPCoach">
+      <children xsi:type="basic:PartSashContainer" xmi:id="_AOgkcNydEeialuictYB3Og" elementId="com.opcoach.navigator.partsashcontainer.1" horizontal="true">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_dkQy8NycEeialuictYB3Og" elementId="left">
+          <children xsi:type="basic:PartStack" xmi:id="_fPQVINycEeialuictYB3Og" elementId="com.opcoach.navigator.partstack.1">
+            <children xsi:type="advanced:Placeholder" xmi:id="_fyqkMNycEeialuictYB3Og" elementId="org.eclipse.ui.navigator.ProjectExplorer"/>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_B444ENycEeialuictYB3Og" elementId="com.opcoach.navigator.partstack.0">
+            <children xsi:type="advanced:Placeholder" xmi:id="_k05KwNxWEeialuictYB3Og" elementId="com.opcoach.navigator.libraryBrowser"/>
+          </children>
+        </children>
+        <children xsi:type="basic:PartSashContainer" xmi:id="_Gt0xQNydEeialuictYB3Og" elementId="right">
+          <children xsi:type="basic:PartStack" xmi:id="_7Yp94NyeEeialuictYB3Og" elementId="com.opcoach.navigator.partstack.2">
+            <children xsi:type="advanced:Placeholder" xmi:id="_IpKckNydEeialuictYB3Og" elementId="com.opcoach.navigator.versions"/>
+          </children>
+        </children>
+      </children>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_13RLMNyZEeialuictYB3Og" featurename="descriptors" parentElementId="xpath:/">
+    <elements xsi:type="basic_1:PartDescriptor" xmi:id="_3Pka4NyZEeialuictYB3Og" elementId="com.opcoach.navigator.libraryBrowser" label="OL Library" contributionURI="bundleclass://com.opcoach.navigator/com.opcoach.navigator.LibraryBrowser">
+      <toolbar xmi:id="_gLoTQNybEeialuictYB3Og" elementId="com.opcoach.navigator.toolbar">
+        <children xsi:type="menu:DirectToolItem" xmi:id="_5bsgUNz-EeialuictYB3Og" elementId="com.opcoach.navigator.directtoolitem.0" iconURI="platform:/plugin/com.opcoach.navigator/icons/container.gif" tooltip="Choose the root directory for Libraries" contributionURI="bundleclass://com.opcoach.navigator/com.opcoach.navigator.handlers.OpenPreferences"/>
+      </toolbar>
+    </elements>
+    <elements xsi:type="basic_1:PartDescriptor" xmi:id="_JW2B8NydEeialuictYB3Og" elementId="com.opcoach.navigator.versions" label="Versions" contributionURI="bundleclass://com.opcoach.navigator/com.opcoach.navigator.VersionsPart"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_a3kIQN0BEeialuictYB3Og" featurename="toolBarContributions" parentElementId="xpath:/">
+    <elements xsi:type="menu:ToolBarContribution" xmi:id="_cDqH8N0BEeialuictYB3Og" elementId="com.opcoach.navigator.toolbarcontribution.0" parentId="org.eclipse.ui.navigator.ProjectExplorer" positionInParent="after=additions">
+      <children xsi:type="menu:DirectToolItem" xmi:id="_kg29wN0BEeialuictYB3Og" elementId="com.opcoach.navigator.directtoolitem.1" iconURI="platform:/plugin/com.opcoach.navigator/icons/Customer.png" tooltip="Sort Tree by Customers" contributionURI="bundleclass://com.opcoach.navigator/com.opcoach.navigator.handlers.CustomerFirstHandler"/>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>

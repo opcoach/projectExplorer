@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         id="com.opcoach.navigator.fragment"
+         point="org.eclipse.e4.workbench.model">
+      <fragment
+            uri="fragment.e4xmi">
+      </fragment>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="com.opcoach.navigator.pref.LibraryRootPrefPage"
+            id="com.opcoach.navigator.libraries.prefpage"
+            name="Libraries">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.ui.navigator.navigatorContent">
+      <navigatorContent
+            contentProvider="com.opcoach.navigator.CustomerContentProvider"
+            icon="icons/Customer.png"
+            id="com.opcoach.navigator.navigatorContentCustomer"
+            name="Customer First">
+      </navigatorContent>
+   </extension>
+
+</plugin>
